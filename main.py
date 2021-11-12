@@ -7,8 +7,8 @@ import threading
 import socket
 import logging
 
-HOST_KEY = paramiko.RSAKey(filename='../server.key')
-
+HOST_KEY = paramiko.RSAKey(filename='server.key')
+PORT = 2222
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -21,29 +21,52 @@ class sshHoneyPot(paramiko.ServerInterface):
     client_ip = None
     
     def __init__(self, client_ip):
+        print("instantiating sshHoneyPot")
         self.client_ip = client_ip
         self.event = threading.Event()
 
+    def check_auth_publickey(self, username, key):
+        print("in check_auth_publickey")
+        logging.info('public key from ip {} username: {} key:{}'.format(
+            self,client_ip, username, key))
+        return paramiko.AUTH_SUCCESSFUL
+
     def check_auth_password(self, username, password):
+        print("in check_auth_password")
         logging.info('new logging attempt from ip {} username: {} password: {}'.format(
             self.client_ip, username, password))
         return paramiko.AUTH_SUCCESSFUL
 
+    def check_channel_request(self, kind, chanid):
+        logging.info('client called check_channel_request ({}): {}'.format(
+            self.client_ip, kind))
+        if kind == 'session':
+            return paramiko.OPEN_SUCCEEDED
 
 
 def handle_connection(client, addr):
     
     client_ip = addr[0]
-    logging.info('New connection coming from {}', client_ip)
+    logging.info('New connection coming from {}'.format(client_ip))
 
+    print("starting transport setup")
     transport = paramiko.Transport(client_ip)
+    print("trying to add server key")
     transport.add_server_key(HOST_KEY)
 
-    server_handler = SSHServerHandler()
+    print("added key")
 
-    transport.start_server(server=server_handler)
+    try:
+        server_handler = sshHoneyPot(client_ip)
+        print("going to start server_handler")
+        transport.start_server(server=server_handler)
+    except Exception as e:
+        print(e)
+
+    print("started_server")
     
     channel = transport.accept(1)
+    print("setup channel")
     
     if channel is None:
         print("Channel is none")
@@ -57,7 +80,7 @@ def main():
         print('dbg 2')
         server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         print('dbg 3')
-        server.bind(('',2222))
+        server.bind(('',PORT))
         print('dbg 4')
         server.listen(100)
 
@@ -67,10 +90,12 @@ def main():
         while(flag):
             try:
                 client_socket, client_addr = server.accept()
-                thread.start_new_thread(handleConnection, (client_socket,))
-            except:
+                threading.Thread(target=handle_connection, args=(client_socket, client_addr)).start()
+            except Exception as e:
         
                 print('Error')
+                print(e)
+                logging.info(e)
 
     except Exception as e:
         print('Big error')
