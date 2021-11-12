@@ -22,6 +22,7 @@ class sshHoneyPot(paramiko.ServerInterface):
     
     def __init__(self, client_ip):
         print("instantiating sshHoneyPot")
+        print("client_ip {}".format(client_ip))
         self.client_ip = client_ip
         self.event = threading.Event()
 
@@ -50,7 +51,7 @@ def handle_connection(client, addr):
     logging.info('New connection coming from {}'.format(client_ip))
 
     print("starting transport setup")
-    transport = paramiko.Transport(client_ip)
+    transport = paramiko.Transport(client)
     print("trying to add server key")
     transport.add_server_key(HOST_KEY)
 
@@ -60,16 +61,18 @@ def handle_connection(client, addr):
         server_handler = sshHoneyPot(client_ip)
         print("going to start server_handler")
         transport.start_server(server=server_handler)
+        channel = transport.accept(10)
     except Exception as e:
         print(e)
 
     print("started_server")
-    
-    channel = transport.accept(1)
     print("setup channel")
     
     if channel is None:
         print("Channel is none")
+
+
+    channel.send("Welcome to Ubuntu")
 
 
 def main():
