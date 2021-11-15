@@ -48,6 +48,15 @@ class sshHoneyPot(paramiko.ServerInterface):
         self.event.set()
         return True
 
+def parsecommand(cmd, channel):
+    cmd = cmd.strip()
+
+    if cmd == 'ls':
+        channel.send('users.txt\r\n')
+    elif cmd == 'pwd':
+        channel.send('/home/users\r\n')
+    else:
+        channel.send('gotcha\r\n')
 
 def handle_connection(client, addr):
     
@@ -77,15 +86,22 @@ def handle_connection(client, addr):
 
     run_flag = True
 
-    server_handler.event.wait(10)
-    channel.settimeout(10)
+    server_handler.event.wait(50)
+    channel.settimeout(50)
 
     channel.send("Welcome to Ubuntu\r\n")
     while(run_flag):
-        #channel.send('ubuntu ')
+        channel.send('ubuntu@ip-172-31-40-131:~$ ')
         cmd = ''
-        cmd_part = channel.recv(1024)
-        #channel.send(cmd_part)
+        while not (cmd.endswith('\n') or cmd.endswith('\r') or cmd.endswith('\r\n')):
+            cmd_part = channel.recv(1024)
+            print(type(cmd_part))
+            #channel.send(cmd_part)
+            cmd += str(cmd_part, 'UTF-8')
+        
+        parsecommand(cmd, channel)
+
+
 
 
 
