@@ -44,6 +44,10 @@ class sshHoneyPot(paramiko.ServerInterface):
         if kind == 'session':
             return paramiko.OPEN_SUCCEEDED
 
+    def check_channel_shell_request(self, chanid):
+        self.event.set()
+        return True
+
 
 def handle_connection(client, addr):
     
@@ -71,8 +75,18 @@ def handle_connection(client, addr):
     if channel is None:
         print("Channel is none")
 
+    run_flag = True
 
-    channel.send("Welcome to Ubuntu")
+    server_handler.event.wait(10)
+    channel.settimeout(10)
+
+    channel.send("Welcome to Ubuntu\r\n")
+    while(run_flag):
+        #channel.send('ubuntu ')
+        cmd = ''
+        cmd_part = channel.recv(1024)
+        #channel.send(cmd_part)
+
 
 
 def main():
@@ -89,16 +103,17 @@ def main():
 
         print('dbg 5')
 
-        flag = True
-        while(flag):
+        connect_flag = True
+
+        while(connect_flag):
             try:
                 client_socket, client_addr = server.accept()
                 threading.Thread(target=handle_connection, args=(client_socket, client_addr)).start()
             except Exception as e:
-        
                 print('Error')
                 print(e)
                 logging.info(e)
+                connect_flag = False
 
     except Exception as e:
         print('Big error')
