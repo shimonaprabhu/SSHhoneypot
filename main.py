@@ -6,14 +6,19 @@ import paramiko
 import threading
 import socket
 import logging
+import sys
+from datetime import date
+
+today = date.today()
 
 HOST_KEY = paramiko.RSAKey(filename='server.key')
 PORT = 2222
+logfile = 'ssh_honeypot_{}.log'.format(today.strftime('%m_%d_%Y'))
 
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-    filename='ssh_honeypot.log')
+    format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level = logging.INFO,
+    filename = logfile)
 
 
 class sshHoneyPot(paramiko.ServerInterface):
@@ -48,15 +53,27 @@ class sshHoneyPot(paramiko.ServerInterface):
         self.event.set()
         return True
 
-def parsecommand(cmd, channel):
+
+def parsecommand(cmd, channel, client_ip):
+    
     cmd = cmd.strip()
+
+    logging.info('client {} is running comand {}'.format(client_ip, cmd))
 
     if cmd == 'ls':
         channel.send('users.txt\r\n')
     elif cmd == 'pwd':
         channel.send('/home/users\r\n')
+    elif cmd == 'exit':
+        #sys.exit(0)
+        return False
+    elif cmd == '':
+        #do nothing
+        return True
     else:
-        channel.send('gotcha\r\n')
+        channel.send('Permission denied.\r\n')
+
+    return True
 
 def handle_connection(client, addr):
     
@@ -99,8 +116,14 @@ def handle_connection(client, addr):
             #channel.send(cmd_part)
             cmd += str(cmd_part, 'UTF-8')
         
-        parsecommand(cmd, channel)
+        
+        run_flag = parsecommand(cmd, channel, client_ip)
+        print(run_flag)
 
+
+    print("Leaving run_flag while loop")
+    channel.close()
+    logging.info('Conection from {} closing'.format(client_ip))
 
 
 
@@ -121,6 +144,8 @@ def main():
 
         connect_flag = True
 
+        
+        print("Entering connect_flag while")
         while(connect_flag):
             try:
                 client_socket, client_addr = server.accept()
@@ -128,8 +153,8 @@ def main():
             except Exception as e:
                 print('Error')
                 print(e)
-                logging.info(e)
                 connect_flag = False
+
 
     except Exception as e:
         print('Big error')
