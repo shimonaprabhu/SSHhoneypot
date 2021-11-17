@@ -102,20 +102,29 @@ def handle_connection(client, addr):
         print("Channel is none")
 
     run_flag = True
+    timeout_flag = True
 
     server_handler.event.wait(50)
     channel.settimeout(50)
 
     channel.send("Welcome to Ubuntu\r\n")
-    while(run_flag):
+    
+    while(run_flag and timeout_flag):
         channel.send('ubuntu@ip-172-31-40-131:~$ ')
         cmd = ''
         while not (cmd.endswith('\n') or cmd.endswith('\r') or cmd.endswith('\r\n')):
-            cmd_part = channel.recv(1024)
-            print(type(cmd_part))
-            #channel.send(cmd_part)
-            cmd += str(cmd_part, 'UTF-8')
-        
+            try:
+                cmd_part = channel.recv(1024)
+                print(type(cmd_part))
+                #channel.send(cmd_part)
+                cmd += str(cmd_part, 'UTF-8')
+            except Exception as e:
+                print(e)
+                timeout_flag = False
+                break
+            
+            #print(type(cmd_part))
+            #cmd += str(cmd_part, 'UTF-8')
         
         run_flag = parsecommand(cmd, channel, client_ip)
         print(run_flag)
