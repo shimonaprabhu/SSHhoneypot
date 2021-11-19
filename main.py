@@ -8,7 +8,7 @@ import socket
 import logging
 import sys
 from datetime import date
-import keyboard
+import os
 
 today = date.today()
 
@@ -41,6 +41,10 @@ class sshHoneyPot(paramiko.ServerInterface):
     def check_auth_password(self, username, password):
         #print("in check_auth_password")
         logging.info('new logging attempt from ip {} username: {} password: {}'.format(
+            self.client_ip, username, password))
+
+        #for console purposes
+        print('new logging attempt from ip {} username: {} password: {}'.format(
             self.client_ip, username, password))
         return paramiko.AUTH_SUCCESSFUL
 
@@ -140,6 +144,7 @@ def handle_connection(client, addr):
 
 def main():
 
+    #os.system("sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
     try:
         #print('dbg 1')
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -152,21 +157,41 @@ def main():
 
         #print('dbg 5')
 
+        os.system("sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
+
         connect_flag = True
 
         
         #print("Entering connect_flag while")
+
+        threads = []
         while(connect_flag):
             try:
                 client_socket, client_addr = server.accept()
-                threading.Thread(target=handle_connection, args=(client_socket, client_addr)).start()
-
+                thread = threading.Thread(target=handle_connection, args=(client_socket, client_addr))
+                thread.daemon = True
+                thread.start()
+                #threads.append(thread)
             except Exception as e:
                 #print('Error')
                 #print(e)
                 connect_flag = False
+            except KeyboardInterrupt:
+                print('interrupted')
+                connect_flag = False
+
+        
+        print('Exited while loop')
+
+        '''
+        for thread in threads:
+            print("joining thread")
+            thread.join()
+        '''
 
 
+        os.system("sudo iptables -D PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
+        print('deleted ip table entry')
     except Exception as e:
         #print('Big error')
         logging.info(e)
