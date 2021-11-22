@@ -92,7 +92,7 @@ def handle_connection(client, addr):
 
     #print("starting transport setup")
     transport = paramiko.Transport(client)
-    #transport.banner_timeout = 200
+    transport.banner_timeout = 200
     #print("trying to add server key")
     transport.add_server_key(HOST_KEY)
     #transport.local_version = 'Welcome to Ubuntu'
