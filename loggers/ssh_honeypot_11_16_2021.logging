@@ -1,0 +1,70 @@
+2021-11-16 22:58:11,251 - root - INFO - New connection coming from 206.117.25.49
+2021-11-16 22:58:11,471 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-16 22:58:11,795 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-16 22:58:13,544 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-16 22:58:13,544 - paramiko.transport - INFO - Auth granted (password).
+2021-11-16 22:58:13,607 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-16 22:58:20,083 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-16 23:02:22,714 - root - INFO - New connection coming from 206.117.25.49
+2021-11-16 23:02:22,907 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-16 23:02:23,229 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-16 23:02:25,197 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-16 23:02:25,197 - paramiko.transport - INFO - Auth granted (password).
+2021-11-16 23:02:25,259 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-16 23:02:35,919 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-16 23:03:03,968 - root - INFO - New connection coming from 206.117.25.49
+2021-11-16 23:03:04,160 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-16 23:03:04,477 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-16 23:03:05,965 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-16 23:03:05,965 - paramiko.transport - INFO - Auth granted (password).
+2021-11-16 23:03:06,027 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-16 23:03:14,671 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-16 23:04:59,785 - root - INFO - New connection coming from 206.117.25.49
+2021-11-16 23:05:00,006 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-16 23:05:00,325 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-16 23:05:06,643 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: nihar
+2021-11-16 23:05:06,643 - paramiko.transport - INFO - Auth granted (password).
+2021-11-16 23:05:06,705 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-16 23:05:15,358 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-16 23:21:25,436 - root - INFO - New connection coming from 206.117.25.49
+2021-11-16 23:21:25,571 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-16 23:21:25,892 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-16 23:21:27,922 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-16 23:21:27,922 - paramiko.transport - INFO - Auth granted (password).
+2021-11-16 23:21:27,985 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-16 23:21:29,298 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-16 23:21:30,641 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-16 23:21:31,956 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-16 23:21:34,777 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:34,961 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:35,120 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:35,472 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:35,473 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:35,616 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:35,772 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:35,933 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:36,087 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:36,256 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:36,415 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:36,568 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:48,813 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:49,756 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-16 23:21:51,057 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-16 23:21:51,058 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-16 23:21:51,289 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-16 23:22:29,070 - root - INFO - New connection coming from 168.150.9.116
+2021-11-16 23:22:29,070 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.6)
+2021-11-16 23:22:31,335 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-16 23:22:34,409 - root - INFO - new logging attempt from ip 168.150.9.116 username: ubuntu password: pratibha
+2021-11-16 23:22:34,409 - paramiko.transport - INFO - Auth granted (password).
+2021-11-16 23:22:34,481 - root - INFO - client called check_channel_request (168.150.9.116): session
+2021-11-16 23:22:36,341 - root - INFO - client 168.150.9.116 is running comand 
+2021-11-16 23:22:37,528 - root - INFO - client 168.150.9.116 is running comand la
+2021-11-16 23:22:40,692 - root - INFO - client 168.150.9.116 is running comand ls
+2021-11-16 23:22:42,633 - root - INFO - client 168.150.9.116 is running comand pwd
+2021-11-16 23:22:44,249 - root - INFO - client 168.150.9.116 is running comand ca
+2021-11-16 23:22:45,983 - root - INFO - client 168.150.9.116 is running comand cat
+2021-11-16 23:22:48,496 - root - INFO - client 168.150.9.116 is running comand cd
+2021-11-16 23:22:53,331 - root - INFO - client 168.150.9.116 is running comand exit
+2021-11-16 23:22:53,331 - root - INFO - Conection from 168.150.9.116 closing
+2021-11-16 23:22:53,473 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user

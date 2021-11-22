@@ -1,0 +1,359 @@
+2021-11-17 00:03:33,706 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 00:03:33,891 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 00:03:34,216 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 00:03:36,244 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 00:03:36,245 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 00:03:36,309 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 00:03:38,123 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 00:03:39,638 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 00:03:41,150 - root - INFO - client 206.117.25.49 is running comand cat
+2021-11-17 00:03:45,976 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:46,143 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:46,295 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:46,443 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:46,602 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:46,759 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:46,914 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:47,066 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:47,219 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:47,372 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 00:03:48,629 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 00:03:48,629 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 00:03:48,854 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:09:10,620 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:09:10,852 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:09:48,373 - root - INFO - New connection coming from 168.150.29.110
+2021-11-17 18:09:48,374 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.1)
+2021-11-17 18:16:55,860 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:16:56,057 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:16:58,364 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:17:00,270 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:17:00,270 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:17:00,331 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:17:02,326 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:17:03,497 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:17:09,668 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:17:18,211 - root - INFO - client 206.117.25.49 is running comand cat users.txt
+2021-11-17 18:17:26,570 - root - INFO - client 206.117.25.49 is running comand [A[A[B[B[B[B[B[B[B
+2021-11-17 18:18:01,985 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:18:02,179 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:18:02,399 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:18:16,651 - root - INFO - client 206.117.25.49 is running comand cat users.txt
+2021-11-17 18:18:20,149 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 18:18:20,150 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:18:20,379 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:18:26,163 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:18:26,401 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:18:26,723 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:18:28,351 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:18:28,351 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:18:28,414 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:21:27,581 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:22:54,065 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:22:54,304 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:22:54,626 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:22:56,220 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:22:56,220 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:22:56,283 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:22:57,174 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:22:58,122 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:23:18,576 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 18:23:18,577 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:23:18,807 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:24:58,366 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:24:58,586 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:24:58,911 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:25:00,806 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:25:00,806 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:25:00,869 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:26:02,098 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:29:58,802 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:29:59,005 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:29:59,330 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:30:01,310 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:30:01,311 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:30:01,373 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:30:51,664 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:32:02,712 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:32:02,909 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:32:03,235 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:32:04,651 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:32:04,651 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:32:04,714 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:32:36,043 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:32:38,952 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:32:40,142 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:33:26,334 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:33:26,542 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:33:26,862 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:33:28,397 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:33:28,397 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:33:28,459 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:33:59,506 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:34:01,371 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:34:02,363 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:35:14,374 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:35:14,618 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:35:14,944 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:35:17,648 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:35:17,648 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:35:17,711 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:35:38,001 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:38:13,035 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:38:13,270 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:38:13,587 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:38:15,243 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:38:15,244 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:38:15,305 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:38:35,368 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:38:55,369 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:15,370 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:17,221 - root - INFO - client 206.117.25.49 is running comand [A[B[B
+2021-11-17 18:39:17,456 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:17,692 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:21,065 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:21,616 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:22,143 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:22,882 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:23,610 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:24,129 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:24,900 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:26,485 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:39:33,317 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:43:15,205 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:43:15,368 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:43:15,691 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:43:17,373 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:43:17,373 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:43:17,437 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:43:37,500 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:43:57,501 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:44:01,393 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:44:01,551 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:44:01,713 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:44:01,877 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:44:02,088 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:44:03,221 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:44:05,012 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:44:06,859 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:44:07,620 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:44:09,478 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 18:44:09,479 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:44:09,709 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:50:14,849 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:50:15,087 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:50:15,406 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:50:16,813 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:50:16,813 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:50:16,874 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:50:36,937 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:50:36,937 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:50:37,166 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:51:31,851 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:51:32,091 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:51:32,408 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:51:34,449 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:51:34,449 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:51:34,511 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:51:36,285 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:36,439 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:36,608 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:36,755 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:36,904 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:37,052 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:37,205 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:37,354 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:37,504 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:37,635 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:37,738 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:51:38,204 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:51:39,364 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:51:40,537 - root - INFO - client 206.117.25.49 is running comand cat
+2021-11-17 18:51:42,430 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 18:51:42,431 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:51:42,659 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:51:56,374 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:51:56,604 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:51:56,922 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:51:58,682 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:51:58,682 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:51:58,743 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:52:05,900 - root - INFO - client 206.117.25.49 is running comand toor
+2021-11-17 18:52:07,954 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:52:08,730 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:52:12,387 - root - INFO - New connection coming from 209.141.33.109
+2021-11-17 18:52:12,466 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner
+2021-11-17 18:52:12,469 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-17 18:52:12,469 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-11-17 18:52:12,469 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-11-17 18:52:12,469 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-11-17 18:52:12,469 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-11-17 18:52:12,469 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 609, in _read_timeout
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR -     raise EOFError()
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - EOFError
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - 
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - 
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR -     self._check_banner()
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR -     raise SSHException(
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2021-11-17 18:52:12,470 - paramiko.transport - ERROR - 
+2021-11-17 18:52:16,169 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 18:52:16,170 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:52:16,398 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:52:29,210 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:52:29,400 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:52:29,723 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:52:31,830 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: nihar
+2021-11-17 18:52:31,830 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:52:31,893 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:52:33,686 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:33,839 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:34,009 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:34,441 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:52:39,389 - root - INFO - client 206.117.25.49 is running comand cowabunga
+2021-11-17 18:52:42,248 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:52:44,384 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:44,576 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:44,740 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:44,908 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:45,071 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:45,240 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:45,411 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:45,573 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:45,740 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:45,888 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:46,093 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:46,093 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:52:46,237 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:46,279 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:52:46,432 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:46,598 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:46,811 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:47,250 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:47,632 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:52:49,530 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:52:49,622 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:52:50,255 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:52:53,130 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 18:52:53,130 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:52:53,192 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:52:55,229 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:52:57,324 - root - INFO - client 206.117.25.49 is running comand cwd
+2021-11-17 18:52:58,009 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:52:58,239 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:53:02,833 - root - INFO - client 206.117.25.49 is running comand jdj
+2021-11-17 18:53:04,266 - root - INFO - client 206.117.25.49 is running comand js'd
+2021-11-17 18:53:05,947 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:53:10,256 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:10,257 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:53:10,488 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:53:25,948 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:25,948 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:53:26,178 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:53:41,993 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 18:53:42,234 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 18:53:44,313 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 18:53:48,508 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: Pratibha
+2021-11-17 18:53:48,508 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 18:53:48,570 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 18:53:50,325 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:50,530 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:50,996 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:53:51,981 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:52,144 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:52,323 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:52,482 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:53:53,019 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:53:53,685 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:53:54,303 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 18:53:55,825 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 18:54:00,064 - root - INFO - client 206.117.25.49 is running comand cat
+2021-11-17 18:54:01,949 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:02,143 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:02,343 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:02,538 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:02,720 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:02,951 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:03,913 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:04,121 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:04,352 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:04,583 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:04,820 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:06,305 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:06,552 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:08,186 - root - INFO - client 206.117.25.49 is running comand dkkf
+2021-11-17 18:54:28,187 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 18:54:28,187 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 18:54:28,414 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 18:54:38,738 - root - INFO - New connection coming from 159.223.2.20
+2021-11-17 18:54:38,836 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner
+2021-11-17 18:54:38,836 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-17 18:54:38,836 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 609, in _read_timeout
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -     raise EOFError()
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - EOFError
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - 
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - 
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -     self._check_banner()
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR -     raise SSHException(
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2021-11-17 18:54:38,837 - paramiko.transport - ERROR - 
+2021-11-17 20:21:23,824 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 20:21:24,029 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 20:21:24,354 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 20:21:26,943 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 20:21:26,944 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 20:21:27,007 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 20:27:50,510 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 20:27:50,705 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 20:27:51,026 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 20:27:53,003 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 20:27:53,003 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 20:27:53,065 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 20:27:54,594 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:54,750 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:54,989 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:55,074 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:55,243 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:55,407 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:55,643 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:55,724 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:55,879 - root - INFO - client 206.117.25.49 is running comand 
+2021-11-17 20:27:56,997 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 20:28:10,423 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 20:28:10,663 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 20:28:10,982 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 20:28:12,656 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 20:28:12,656 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 20:28:12,718 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 20:28:14,921 - root - INFO - client 206.117.25.49 is running comand pwd
+2021-11-17 20:28:15,599 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 20:28:17,016 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 20:28:17,864 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 20:28:20,137 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 20:28:20,137 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 20:28:20,367 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-11-17 20:33:33,199 - root - INFO - [Errno 98] Address already in use
+2021-11-17 20:37:58,784 - root - INFO - [Errno 98] Address already in use
+2021-11-17 20:38:45,218 - root - INFO - [Errno 98] Address already in use
+2021-11-17 20:40:14,157 - root - INFO - New connection coming from 206.117.25.49
+2021-11-17 20:40:14,327 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.2)
+2021-11-17 20:40:14,650 - paramiko.transport - INFO - Auth rejected (none).
+2021-11-17 20:40:16,607 - root - INFO - new logging attempt from ip 206.117.25.49 username: ubuntu password: toor
+2021-11-17 20:40:16,608 - paramiko.transport - INFO - Auth granted (password).
+2021-11-17 20:40:16,671 - root - INFO - client called check_channel_request (206.117.25.49): session
+2021-11-17 20:40:18,704 - root - INFO - client 206.117.25.49 is running comand ls
+2021-11-17 20:40:20,424 - root - INFO - client 206.117.25.49 is running comand exit
+2021-11-17 20:40:20,424 - root - INFO - Conection from 206.117.25.49 closing
+2021-11-17 20:40:20,655 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user

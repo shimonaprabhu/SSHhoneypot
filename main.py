@@ -14,7 +14,7 @@ today = date.today()
 
 HOST_KEY = paramiko.RSAKey(filename='server.key')
 PORT = 2222
-logfile = 'ssh_honeypot_{}.log'.format(today.strftime('%m_%d_%Y'))
+logfile = 'loggers/ssh_honeypot_{}.logging'.format(today.strftime('%m_%d_%Y'))
 
 logging.basicConfig(
     format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -53,10 +53,15 @@ class sshHoneyPot(paramiko.ServerInterface):
             self.client_ip, kind))
         if kind == 'session':
             return paramiko.OPEN_SUCCEEDED
+        else :
+            return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
 
     def check_channel_shell_request(self, chanid):
         self.event.set()
         return True
+
+    def get_banner(self):
+        return ('Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.11.0-1021-aws x86_64)\n', 'utf-8')
 
 
 def parsecommand(cmd, channel, client_ip):
@@ -87,24 +92,32 @@ def handle_connection(client, addr):
 
     #print("starting transport setup")
     transport = paramiko.Transport(client)
+    #transport.banner_timeout = 200
     #print("trying to add server key")
     transport.add_server_key(HOST_KEY)
-
+    #transport.local_version = 'Welcome to Ubuntu'
+    #transport.banner_timeout = 200
+    #print('timeout')
     #print("added key")
 
     try:
         server_handler = sshHoneyPot(client_ip)
         #print("going to start server_handler")
         transport.start_server(server=server_handler)
-        channel = transport.accept(10)
+        channel = transport.accept(100)
     except Exception as e:
         logging.info(e)
-
+        return
+    except SSHException:
+        logging.info('SSH Exception: timeout {}'.format(client_ip))
+        print('timeout')
+        return
     #print("started_server")
     #print("setup channel")
     
     if channel is None:
         logging.info("Channel is none")
+        return
 
     run_flag = True
     timeout_flag = True
