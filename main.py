@@ -60,9 +60,9 @@ class sshHoneyPot(paramiko.ServerInterface):
         self.event.set()
         return True
 
-    def get_banner(self):
-        return ('Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.11.0-1021-aws x86_64)\n', 'utf-8')
-
+    #def get_banner(self):
+        #return ('SSH-Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.11.0-1021-aws x86_64)\n', 'en-US')
+    
 
 def parsecommand(cmd, channel, client_ip):
     
@@ -95,7 +95,8 @@ def handle_connection(client, addr):
     transport.banner_timeout = 200
     #print("trying to add server key")
     transport.add_server_key(HOST_KEY)
-    #transport.local_version = 'Welcome to Ubuntu'
+    transport.local_version = 'SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2'
+    #transport.local_version = 'None'
     #transport.banner_timeout = 200
     #print('timeout')
     #print("added key")
