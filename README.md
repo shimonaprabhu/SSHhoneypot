@@ -1,18 +1,10 @@
-# SSHhoneypot
-SSHhoneypot
 # SSH Honeypot
 
-***
-
 ## Welcome to the SSH Honeypot GitHub repository
-
-***
 
 The SSH Honeypot is a Python based SSH shell emulation. Using Paramiko, the SSH honeypot is used to log the attacker's interaction with the shell. 
 
 ## Installation
-
-***
 
 - Create an EC2 instance and set up an elastic IP
 - SSH into the instance, where user is the username and localhost is the elastic IP configured on the AWS instance
