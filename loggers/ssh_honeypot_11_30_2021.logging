@@ -1,0 +1,102 @@
+2021-11-30 23:20:46,220 - root - INFO - New connection coming from 162.142.125.43
+2021-11-30 23:20:46,240 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 607, in _read_timeout
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -     x = self.__socket.recv(128)
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - ConnectionResetError: [Errno 104] Connection reset by peer
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - 
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - 
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -     self._check_banner()
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR -     raise SSHException(
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[Errno 104] Connection reset by peer
+2021-11-30 23:20:46,244 - paramiko.transport - ERROR - 
+2021-11-30 23:20:46,245 - root - INFO - Error reading SSH protocol banner[Errno 104] Connection reset by peer
+2021-11-30 23:20:46,264 - root - INFO - New connection coming from 162.142.125.43
+2021-11-30 23:20:46,264 - paramiko.transport - INFO - Connected (version 2.0, client Go)
+2021-11-30 23:21:01,279 - root - INFO - Channel is none
+2021-11-30 23:21:57,738 - root - INFO - New connection coming from 162.142.125.195
+2021-11-30 23:21:57,738 - paramiko.transport - INFO - Connected (version 2.0, client Go)
+2021-11-30 23:22:12,738 - root - INFO - Channel is none
+2021-11-30 23:25:37,498 - root - INFO - New connection coming from 209.141.53.74
+2021-11-30 23:25:37,577 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner
+2021-11-30 23:25:37,577 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:25:37,577 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-11-30 23:25:37,577 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 609, in _read_timeout
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -     raise EOFError()
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - EOFError
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - 
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - 
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -     self._check_banner()
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR -     raise SSHException(
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2021-11-30 23:25:37,578 - paramiko.transport - ERROR - 
+2021-11-30 23:25:37,578 - root - INFO - Error reading SSH protocol banner
+2021-11-30 23:26:22,510 - root - INFO - New connection coming from 209.141.53.74
+2021-11-30 23:26:22,513 - paramiko.transport - INFO - Connected (version 2.0, client libssh2_1.4.3)
+2021-11-30 23:26:23,541 - root - INFO - new logging attempt from ip 209.141.53.74 username: user password: 1
+2021-11-30 23:26:23,541 - paramiko.transport - INFO - Auth granted (password).
+2021-11-30 23:26:23,744 - root - INFO - client called check_channel_request (209.141.53.74): session
+2021-11-30 23:26:24,154 - paramiko.transport - INFO - Disconnect (code 11): Normal Shutdown, Thank you for playing
+2021-11-30 23:30:09,919 - root - INFO - New connection coming from 205.185.120.71
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 609, in _read_timeout
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -     raise EOFError()
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - EOFError
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - 
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - 
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -     self._check_banner()
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-11-30 23:30:09,998 - paramiko.transport - ERROR -     raise SSHException(
+2021-11-30 23:30:09,999 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2021-11-30 23:30:09,999 - paramiko.transport - ERROR - 
+2021-11-30 23:30:09,999 - root - INFO - Error reading SSH protocol banner
+2021-11-30 23:30:28,600 - root - INFO - New connection coming from 205.185.120.71
+2021-11-30 23:30:28,603 - paramiko.transport - INFO - Connected (version 2.0, client libssh2_1.4.3)
+2021-11-30 23:30:33,174 - root - INFO - new logging attempt from ip 205.185.120.71 username: user password: 1
+2021-11-30 23:30:33,174 - paramiko.transport - INFO - Auth granted (password).
+2021-11-30 23:30:34,529 - root - INFO - client called check_channel_request (205.185.120.71): session
+2021-11-30 23:30:34,924 - paramiko.transport - INFO - Disconnect (code 11): Normal Shutdown, Thank you for playing
+2021-11-30 23:31:55,036 - root - INFO - New connection coming from 164.90.198.194
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 609, in _read_timeout
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR -     raise EOFError()
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - EOFError
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - 
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - 
+2021-11-30 23:31:55,132 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-11-30 23:31:55,133 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-11-30 23:31:55,133 - paramiko.transport - ERROR -     self._check_banner()
+2021-11-30 23:31:55,133 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-11-30 23:31:55,133 - paramiko.transport - ERROR -     raise SSHException(
+2021-11-30 23:31:55,133 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2021-11-30 23:31:55,133 - paramiko.transport - ERROR - 
+2021-11-30 23:31:55,133 - root - INFO - Error reading SSH protocol banner

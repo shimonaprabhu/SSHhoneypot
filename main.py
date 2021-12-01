@@ -123,7 +123,8 @@ def handle_connection(client, addr):
     run_flag = True
     timeout_flag = True
 
-    server_handler.event.wait(50)
+    #server_handler.event.wait(50)
+    server_handler.event.wait() #trying to use no timeout to see if this removes banner timeout issue
     channel.settimeout(50)
 
     channel.send("Welcome to Ubuntu\r\n")
@@ -158,6 +159,7 @@ def handle_connection(client, addr):
 
 def main():
 
+    print('Starting our Honeypot')
     #os.system("sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
     try:
         #print('dbg 1')
