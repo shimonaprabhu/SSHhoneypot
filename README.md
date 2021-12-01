@@ -27,7 +27,7 @@ sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222
 ```
 - Run the program
 ```
-python3 main.py
+python main.py
 ```
 - The logs files are timestamped and created in the current folder, the shell also logs 
 
