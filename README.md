@@ -21,10 +21,8 @@ source <env_name>/bin/activate
 ```
 pip install -r requirements.txt
 ```
-- Route the traffic from port 22 (SSH port) to port 2222
-```
-sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222
-```
+
+
 - Run the program
 ```
 python main.py
