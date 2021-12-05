@@ -16,6 +16,7 @@ ssh user@localhost
 pip install virtualenv
 virtualenv <env_name>
 source <env_name>/bin/activate
+cd <env_name>
 ```
 - Install the required dependencies
 ```
