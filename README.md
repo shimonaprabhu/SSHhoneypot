@@ -20,9 +20,14 @@ cd <env_name>
 ```
 - Install the required dependencies
 ```
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
+- Generate keys
+```
+ssh-keygen -t rsa -f server.key
+mv server.key.pub server.pub
+```
 
 - Run the program
 ```
