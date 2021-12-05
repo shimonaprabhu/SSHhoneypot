@@ -54,3 +54,44 @@
 2021-12-05 01:52:03,654 - root - INFO - client 98.252.121.169 is running comand exit
 2021-12-05 01:52:03,655 - root - INFO - Conection from 98.252.121.169 closing
 2021-12-05 01:52:03,828 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-12-05 02:00:53,024 - root - INFO - New connection coming from 98.252.121.169
+2021-12-05 02:00:53,024 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.6)
+2021-12-05 02:00:53,297 - root - INFO - 
+2021-12-05 02:02:16,878 - root - INFO - New connection coming from 98.252.121.169
+2021-12-05 02:02:16,879 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.6)
+2021-12-05 02:02:19,438 - paramiko.transport - INFO - Auth rejected (none).
+2021-12-05 02:02:28,133 - root - INFO - new logging attempt from ip 98.252.121.169 username: ubuntu password: Pratibha
+2021-12-05 02:02:28,133 - paramiko.transport - INFO - Auth granted (password).
+2021-12-05 02:02:28,220 - root - INFO - client called check_channel_request (98.252.121.169): session
+2021-12-05 02:02:30,007 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 02:02:30,269 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 02:03:20,270 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 02:03:20,270 - root - INFO - Conection from 98.252.121.169 closing
+2021-12-05 02:03:20,452 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-12-05 02:16:57,661 - root - INFO - New connection coming from 23.183.82.135
+2021-12-05 02:16:57,688 - paramiko.transport - ERROR - Exception: Error reading SSH protocol banner
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2211, in _check_banner
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 380, in readline
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/packet.py", line 609, in _read_timeout
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -     raise EOFError()
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - EOFError
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - 
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - 
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - Traceback (most recent call last):
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2039, in run
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -     self._check_banner()
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -   File "/home/ubuntu/ourHoneypot/env/lib/python3.8/site-packages/paramiko/transport.py", line 2215, in _check_banner
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR -     raise SSHException(
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2021-12-05 02:16:57,694 - paramiko.transport - ERROR - 
+2021-12-05 02:16:57,694 - root - INFO - Error reading SSH protocol banner
+2021-12-05 02:17:27,814 - root - INFO - New connection coming from 23.183.82.135
+2021-12-05 02:17:27,945 - paramiko.transport - INFO - Connected (version 2.0, client libssh2_1.4.3)
+2021-12-05 02:17:28,809 - root - INFO - new logging attempt from ip 23.183.82.135 username: user password: 1
+2021-12-05 02:17:28,809 - paramiko.transport - INFO - Auth granted (password).
+2021-12-05 02:17:28,921 - root - INFO - client called check_channel_request (23.183.82.135): session
+2021-12-05 02:17:29,153 - paramiko.transport - INFO - Disconnect (code 11): Normal Shutdown, Thank you for playing
