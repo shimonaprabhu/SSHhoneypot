@@ -1,0 +1,56 @@
+2021-12-05 01:30:24,279 - root - INFO - New connection coming from 98.252.121.169
+2021-12-05 01:30:24,280 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.1)
+2021-12-05 01:30:24,576 - root - INFO - 
+2021-12-05 01:30:41,876 - root - INFO - New connection coming from 98.252.121.169
+2021-12-05 01:30:41,876 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.1)
+2021-12-05 01:30:43,776 - paramiko.transport - INFO - Auth rejected (none).
+2021-12-05 01:30:48,049 - root - INFO - new logging attempt from ip 98.252.121.169 username: ubuntu password: niharwashere
+2021-12-05 01:30:48,049 - paramiko.transport - INFO - Auth granted (password).
+2021-12-05 01:30:48,137 - root - INFO - client called check_channel_request (98.252.121.169): session
+2021-12-05 01:30:57,303 - root - INFO - client 98.252.121.169 is running comand ls
+2021-12-05 01:30:58,880 - root - INFO - client 98.252.121.169 is running comand pwd
+2021-12-05 01:31:00,557 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:31:00,782 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:31:01,084 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:31:01,348 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:31:01,584 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:31:01,877 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:31:02,178 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:50:51,231 - root - INFO - New connection coming from 98.252.121.169
+2021-12-05 01:50:51,232 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.1)
+2021-12-05 01:50:53,236 - paramiko.transport - INFO - Auth rejected (none).
+2021-12-05 01:50:57,108 - root - INFO - new logging attempt from ip 98.252.121.169 username: ubuntu password: niharwuzhere
+2021-12-05 01:50:57,108 - paramiko.transport - INFO - Auth granted (password).
+2021-12-05 01:50:57,195 - root - INFO - client called check_channel_request (98.252.121.169): session
+2021-12-05 01:50:58,895 - root - INFO - client 98.252.121.169 is running comand ls
+2021-12-05 01:50:59,920 - root - INFO - client 98.252.121.169 is running comand pwd
+2021-12-05 01:51:12,990 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:13,171 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:13,332 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:13,511 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:13,670 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:13,833 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:14,005 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:14,175 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:14,345 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:14,511 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:14,624 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:15,193 - root - INFO - client 98.252.121.169 is running comand ls
+2021-12-05 01:51:20,209 - root - INFO - client 98.252.121.169 is running comand cat users.txt
+2021-12-05 01:51:22,704 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:23,003 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:23,225 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:23,399 - root - INFO - client 98.252.121.169 is running comand 
+2021-12-05 01:51:24,935 - root - INFO - client 98.252.121.169 is running comand pwd
+2021-12-05 01:51:36,014 - root - INFO - client 98.252.121.169 is running comand exit
+2021-12-05 01:51:36,014 - root - INFO - Conection from 98.252.121.169 closing
+2021-12-05 01:51:36,190 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user
+2021-12-05 01:51:38,078 - root - INFO - New connection coming from 98.252.121.169
+2021-12-05 01:51:38,078 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.1)
+2021-12-05 01:51:38,531 - paramiko.transport - INFO - Auth rejected (none).
+2021-12-05 01:51:46,695 - root - INFO - new logging attempt from ip 98.252.121.169 username: ubuntu password: pratibha
+2021-12-05 01:51:46,695 - paramiko.transport - INFO - Auth granted (password).
+2021-12-05 01:51:46,783 - root - INFO - client called check_channel_request (98.252.121.169): session
+2021-12-05 01:52:03,654 - root - INFO - client 98.252.121.169 is running comand exit
+2021-12-05 01:52:03,655 - root - INFO - Conection from 98.252.121.169 closing
+2021-12-05 01:52:03,828 - paramiko.transport - INFO - Disconnect (code 11): disconnected by user

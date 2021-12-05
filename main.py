@@ -11,7 +11,6 @@ from datetime import date
 import os
 
 today = date.today()
-
 HOST_KEY = paramiko.RSAKey(filename='server.key')
 PORT = 2222
 logfile = 'loggers/ssh_honeypot_{}.logging'.format(today.strftime('%m_%d_%Y'))
@@ -67,7 +66,6 @@ class sshHoneyPot(paramiko.ServerInterface):
 def parsecommand(cmd, channel, client_ip):
     
     cmd = cmd.strip()
-
     logging.info('client {} is running comand {}'.format(client_ip, cmd))
 
     if cmd == 'ls':
@@ -82,14 +80,12 @@ def parsecommand(cmd, channel, client_ip):
         return True
     else:
         channel.send('Permission denied.\r\n')
-
     return True
 
 def handle_connection(client, addr):
     
     client_ip = addr[0]
     logging.info('New connection coming from {}'.format(client_ip))
-
     #print("starting transport setup")
     transport = paramiko.Transport(client)
     transport.banner_timeout = 200
@@ -122,11 +118,9 @@ def handle_connection(client, addr):
 
     run_flag = True
     timeout_flag = True
-
-    #server_handler.event.wait(50)
-    server_handler.event.wait() #trying to use no timeout to see if this removes banner timeout issue
+    server_handler.event.wait(50)
+    #server_handler.event.wait() #trying to use no timeout to see if this removes banner timeout issue
     channel.settimeout(50)
-
     channel.send("Welcome to Ubuntu\r\n")
     
     while(run_flag and timeout_flag):
@@ -142,25 +136,19 @@ def handle_connection(client, addr):
                 #print(e)
                 timeout_flag = False
                 break
-            
             #print(type(cmd_part))
             #cmd += str(cmd_part, 'UTF-8')
-        
         run_flag = parsecommand(cmd, channel, client_ip)
         #print(run_flag)
-
-
     #print("Leaving run_flag while loop")
     channel.close()
     logging.info('Conection from {} closing'.format(client_ip))
-
-
-
 
 def main():
 
     print('Starting our Honeypot')
     #os.system("sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
+    
     try:
         #print('dbg 1')
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -170,17 +158,11 @@ def main():
         server.bind(('',PORT))
         #print('dbg 4')
         server.listen(100)
-
         #print('dbg 5')
-
         os.system("sudo iptables -A PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
-
         connect_flag = True
-
-        
         #print("Entering connect_flag while")
-
-        threads = []
+        #threads = []
         while(connect_flag):
             try:
                 client_socket, client_addr = server.accept()
@@ -195,8 +177,6 @@ def main():
             except KeyboardInterrupt:
                 print('interrupted')
                 connect_flag = False
-
-        
         print('Exited while loop')
 
         '''
@@ -204,14 +184,10 @@ def main():
             print("joining thread")
             thread.join()
         '''
-
-
         os.system("sudo iptables -D PREROUTING -t nat -p tcp --dport 22 -j REDIRECT --to-port 2222")
         print('deleted ip table entry')
     except Exception as e:
         #print('Big error')
         logging.info(e)
-
-    
 
 main()
